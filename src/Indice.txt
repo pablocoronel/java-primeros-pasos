@@ -1,0 +1,23 @@
+Videos:
+01: Presentación => Teoria
+02: Instalación JRE y Eclipse => Teoria
+03: Introducción => Teoria
+04: Estructuras principales I: => Primera_Clase.java
+05: Estructuras principales II: => Teoria
+06: Estructuras principales III. Declaración variables: => Variables.java
+07: Estructuras principales IV. Constantes y Operadores I => Declaraciones_Operadores_1.java
+08: Estructuras principales V. Constantes y Operadores II => Declaraciones_Operadores_1.java
+09: Estructuras principales VI. Clase Math I => Calculos_con_Math.java
+10: Estructuras principales VII. Clase Math II => Calculos_con_Math.java
+11: Manipulación de cadenas. Clase String I => Manipula_Cadenas.java
+12: Manipulación de cadenas. Clase String II => Manipula_Cadenas_II.java, Manipula_Cadenas_III.java
+13: Acercamiento a la API Paquetes => Teoria
+14: Entrada Salida datos I => Entrada_Ejemplo1.java
+15: Entrada Salida datos II => Entrada_Ejemplo2.java Entrada_Numeros.java
+16: Condicionales I => Evalua_Edad.java
+17: Condicionales II => Areas.java
+18: Bucles I => Acceso_Aplicacion.java
+19: Bucles II => Adivina_Numero.java
+20: Bucles III => Peso_Ideal.java
+21: Bucles IV => Uso_Bucle_for.java, Comprueba_Email.java
+22: Bucles V => Factorial.java
