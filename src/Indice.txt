@@ -22,3 +22,4 @@ Videos:
 21: Bucles IV => Uso_Bucle_for.java, Comprueba_Email.java
 22: Bucles V => Factorial.java
 23: Arrays I => Uso_Arrays_I.java
+24: Arrays II => Uso_Arrays_II.java, Uso_Arrays_II_Numeros_Aleatorios.java
