@@ -12,10 +12,17 @@ public class Uso_Coche {
 
 		// usando getter
 		System.out.println(renault.getLargo());
-		
-		//usando setter para modificar atributos
-		renault.setColor();
+
+
+		System.out.println(renault.getDatosGenerales());
+		// usando setter para modificar atributos
+		renault.setColor("Rojo");
 		System.out.println(renault.getColor());
+		
+		// usar setter con parametro
+		renault.setAsiento("si");
+		
+		System.out.println(renault.getAsiento());
 	}
 
 }
