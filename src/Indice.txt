@@ -23,3 +23,5 @@ Videos:
 22: Bucles V => Factorial.java
 23: Arrays I => Uso_Arrays_I.java
 24: Arrays II => Uso_Arrays_II.java, Uso_Arrays_II_Numeros_Aleatorios.java
+25: Arrays III. Arrays bidimensionales I => Arrays_Bidimensionales_I.java
+26: Arrays IV. Arrays bidimensionales II => Arrays_Bidimensionales_II.java, Ejemplo_Array_2D.java
