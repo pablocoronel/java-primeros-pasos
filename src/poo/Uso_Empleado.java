@@ -8,6 +8,50 @@ public class Uso_Empleado {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		// Con instancias varias
+//		Empleado empleado1 = new Empleado("pablo", 10000, 2018, 04, 01);
+//
+//		Empleado empleado2 = new Empleado("laura", 12000, 2015, 10, 20);
+//
+//		Empleado empleado3 = new Empleado("carlos", 8000, 2016, 01, 01);
+//
+//		empleado1.aumentarSueldo(5);
+//		empleado2.aumentarSueldo(5);
+//		empleado3.aumentarSueldo(5);
+//
+//		System.out.println("nombre: " + empleado1.getNombre() + " sueldo: " + empleado1.getSueldo() + " fecha de alta: "
+//				+ empleado1.getAltaContrato());
+//
+//		System.out.println("nombre: " + empleado2.getNombre() + " sueldo: " + empleado2.getSueldo() + " fecha de alta: "
+//				+ empleado2.getAltaContrato());
+//
+//		System.out.println("nombre: " + empleado3.getNombre() + " sueldo: " + empleado3.getSueldo() + " fecha de alta: "
+//				+ empleado3.getAltaContrato());
+
+		// en un array
+		Empleado[] misEmpleados = new Empleado[3];
+		misEmpleados[0] = new Empleado("pablo", 10000, 2018, 04, 01);
+		misEmpleados[1] = new Empleado("laura", 12000, 2015, 10, 20);
+		misEmpleados[2] = new Empleado("carlos", 8000, 2016, 01, 01);
+
+//		for (int i = 0; i < misEmpleados.length; i++) {
+//			misEmpleados[i].aumentarSueldo(5);
+//		}
+
+		for (Empleado emp : misEmpleados) {
+			emp.aumentarSueldo(5);
+		}
+
+//
+//		for (int i = 0; i < misEmpleados.length; i++) {
+//			System.out.println("nombre: " + misEmpleados[i].getNombre() + " sueldo: " + misEmpleados[i].getSueldo()
+//					+ " fecha de alta: " + misEmpleados[i].getAltaContrato());
+//		}
+
+		for (Empleado emp : misEmpleados) {
+			System.out.println("nombre: " + emp.getNombre() + " sueldo: " + emp.getSueldo() + " fecha de alta: "
+					+ emp.getAltaContrato());
+		}
 	}
 
 }
