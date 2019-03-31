@@ -42,16 +42,61 @@ public class Coche {
 		}
 	}
 
+	public String getClimatizador() {
+		if (this.climatizador == true) {
+			return "El coche tiene climatizador";
+		} else {
+			return "El coche tiene aire acondicionado";
+		}
+	}
+
+	public String getPesoCoche() {
+		int peso_carroceria = 500;
+		this.peso_total = peso_plataforma + peso_carroceria;
+
+		if (asientos_cuero) {
+			this.peso_total += 50;
+		}
+
+		if (climatizador) {
+			this.peso_total += 20;
+		}
+
+		return "El peso del coche es " + this.peso_total;
+	}
+
 	// setters
 	public void setColor(String color_coche) {
 		color = color_coche;
 	}
 
 	public void setAsiento(String asientos_cuero) {
-		if (asientos_cuero == "si") {
+		if (asientos_cuero.equalsIgnoreCase("si")) {
 			this.asientos_cuero = true;
 		} else {
 			this.asientos_cuero = false;
 		}
+	}
+
+	public void setClimatizador(String climatizador) {
+		if (climatizador.equalsIgnoreCase("si")) {
+			this.climatizador = true;
+		} else {
+			this.climatizador = false;
+		}
+	}
+
+	public int precio_coche() {
+		int precio_final = 10000;
+
+		if (asientos_cuero) {
+			precio_final += 2000;
+		}
+
+		if (climatizador) {
+			precio_final += 1500;
+		}
+
+		return precio_final;
 	}
 }
