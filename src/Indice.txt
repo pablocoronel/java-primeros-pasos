@@ -36,3 +36,5 @@ Package poo:
 31: POO V (setters y getters II, Paso de parámetros) => Coche.java, Uso_Coche.java
 32: POO VI. Construcción objetos => Coche.java, Uso_Coche.java
 33: POO VII. Construcción objetos II => Uso_Empleado.java
+34: POO VIII. Construcción objetos III => Uso_Empleado.java
+35: POO IX. Construcción objetos IV => Uso_Empleado.java
