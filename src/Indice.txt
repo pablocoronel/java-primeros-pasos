@@ -39,3 +39,4 @@ Package poo:
 34: POO VIII. Construcción objetos III => Uso_Empleado.java
 35: POO IX. Construcción objetos IV => Uso_Empleado.java
 36: Constantes Uso final => Pruebas_final.java
+37: Constantes Uso static=> Pruebas_final.java
