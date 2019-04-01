@@ -12,14 +12,17 @@ public class Pruebas_final {
 
 		trabajador1.setSeccion("rr.hh.");
 
-		System.out.println(trabajador1.getDatos());
+		System.out.println(trabajador1.getDatos() + "\n" + trabajador2.getDatos() + "\n" + trabajador3.getDatos() + "\n"
+				+ trabajador4.getDatos());
+
+		System.out.println(Empleados.getIdSiguiente());
 
 		// incrementa el atributo estatico
 //		Empleados.id++; // se incrementa antes de la 2da instancia, pero no es automatico 
-		System.out.println(trabajador2.getDatos());
-
-		System.out.println(trabajador3.getDatos());
-		System.out.println(trabajador4.getDatos());
+//		System.out.println();
+//
+//		System.out.println(trabajador3.getDatos());
+//		System.out.println(trabajador4.getDatos());
 	}
 
 }
@@ -52,5 +55,10 @@ class Empleados {
 	// getter
 	public String getDatos() {
 		return "El nombre es: " + this.nombre + " y la seccion es: " + this.seccion + " el ID es: " + this.id;
+	}
+
+	// metodo estatico
+	public static String getIdSiguiente() {
+		return "El ID siguiente es: " + idSiguiente;
 	}
 }
