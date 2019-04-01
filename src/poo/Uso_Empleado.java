@@ -29,10 +29,11 @@ public class Uso_Empleado {
 //				+ empleado3.getAltaContrato());
 
 		// en un array
-		Empleado[] misEmpleados = new Empleado[3];
+		Empleado[] misEmpleados = new Empleado[4];
 		misEmpleados[0] = new Empleado("pablo", 10000, 2018, 04, 01);
 		misEmpleados[1] = new Empleado("laura", 12000, 2015, 10, 20);
 		misEmpleados[2] = new Empleado("carlos", 8000, 2016, 01, 01);
+		misEmpleados[3] = new Empleado("pepe");
 
 //		for (int i = 0; i < misEmpleados.length; i++) {
 //			misEmpleados[i].aumentarSueldo(5);
@@ -68,6 +69,14 @@ class Empleado {
 
 		GregorianCalendar calendario = new GregorianCalendar(anho, mes - 1, dia);
 		this.altaContrato = calendario.getTime();
+	}
+
+	public Empleado(String nom) {
+//		solamente recibe un paremetro, el resto se inicia en null (0.0 "" si corresponde)
+//		this.nombre = nom;
+
+		// con un parametro y valores por defecto, usando "this"
+		this(nom, 30000, 2000, 01, 01);
 	}
 
 	// getter

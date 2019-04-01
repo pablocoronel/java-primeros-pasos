@@ -41,3 +41,4 @@ Package poo:
 36: Constantes Uso final => Pruebas_final.java
 37: Constantes Uso static=> Pruebas_final.java
 38: Métodos static => Pruebas_final.java
+39: Sobrecarga de constructores => Uso_Empleado.java
