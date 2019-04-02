@@ -31,15 +31,21 @@ public class Uso_Empleado {
 //		System.out.println("nombre: " + empleado3.getNombre() + " sueldo: " + empleado3.getSueldo() + " fecha de alta: "
 //				+ empleado3.getAltaContrato());
 
+		/**************************************************************/
+		Jefatura jefe_RRHH = new Jefatura("juan", 20000, 2010, 1, 15);
+		jefe_RRHH.setIncentivo(2500);
+
 		// en un array
 		// instancia de un array de tipo Empleado
-		Empleado[] misEmpleados = new Empleado[4];
+		Empleado[] misEmpleados = new Empleado[5];
 
 		// guarda en cada posicion una instancia de la clase Empleado
 		misEmpleados[0] = new Empleado("pablo", 10000, 2018, 04, 01);
 		misEmpleados[1] = new Empleado("laura", 12000, 2015, 10, 20);
 		misEmpleados[2] = new Empleado("carlos", 8000, 2016, 01, 01);
 		misEmpleados[3] = new Empleado("pepe");
+		misEmpleados[4] = jefe_RRHH; // polimorfismo, principio de sustitucion
+		misEmpleados[5] = new Jefatura("carla", 30000, 2005, 05, 10);
 
 //		for (int i = 0; i < misEmpleados.length; i++) {
 //			misEmpleados[i].aumentarSueldo(5);
@@ -58,6 +64,11 @@ public class Uso_Empleado {
 
 		// ver los datod de cada empleado guardado en el array de Empleados
 		for (Empleado emp : misEmpleados) {
+			// POLIMORFISMO: la variable "emp" se comporta como Empleado o Jefatura segun
+			// corresponda
+
+			// Enlazado dinámico: la máquina virtual de java sabe a cúal método getSueldo
+			// llamar en tiempo de ejecución (al de la clase padre o al de la clase hija)
 			System.out.println("nombre: " + emp.getNombre() + " sueldo: " + emp.getSueldo() + " fecha de alta: "
 					+ emp.getAltaContrato());
 		}
