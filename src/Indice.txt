@@ -44,3 +44,4 @@ Package poo:
 39: Sobrecarga de constructores => Uso_Empleado.java
 40: Herencia I => Furgoneta.java
 41: Herencia II => Furgoneta.java, Uso_Vehiculo.java (antes Uso_Coche.java)
+42: Herencia III => Uso_Empleado.java
