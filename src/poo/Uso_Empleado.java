@@ -37,7 +37,7 @@ public class Uso_Empleado {
 
 		// en un array
 		// instancia de un array de tipo Empleado
-		Empleado[] misEmpleados = new Empleado[5];
+		Empleado[] misEmpleados = new Empleado[6];
 
 		// guarda en cada posicion una instancia de la clase Empleado
 		misEmpleados[0] = new Empleado("pablo", 10000, 2018, 04, 01);
@@ -46,6 +46,14 @@ public class Uso_Empleado {
 		misEmpleados[3] = new Empleado("pepe");
 		misEmpleados[4] = jefe_RRHH; // polimorfismo, principio de sustitucion
 		misEmpleados[5] = new Jefatura("carla", 30000, 2005, 05, 10);
+
+		// casteo de objetos
+		// asi permite acceder a los metodos y propiedades de la clase hija (jefatura),
+		// sino solamente accede a los atributos y metodos de la clase padre (Empleado)
+		// xq es el tipo de dato del array
+		Jefatura jefa_finanzas = (Jefatura) misEmpleados[5];
+
+		jefa_finanzas.setIncentivo(5000); // ya tiene acceso al metodo de la subclase Jefatura
 
 //		for (int i = 0; i < misEmpleados.length; i++) {
 //			misEmpleados[i].aumentarSueldo(5);
@@ -111,7 +119,8 @@ class Empleado {
 		return this.sueldo;
 	}
 
-	public Date getAltaContrato() {
+	// final en un metodo impide que se sobreescriaba en una clase hija
+	public final Date getAltaContrato() {
 		return this.altaContrato;
 	}
 
@@ -123,7 +132,8 @@ class Empleado {
 }
 
 // herencia, extiende de la clase EMpleado
-class Jefatura extends Empleado {
+//final en la clase impide que a partir de ella se pueda extender
+final class Jefatura extends Empleado {
 	private double incentivo;
 
 	// constructor
@@ -145,3 +155,10 @@ class Jefatura extends Empleado {
 		return sueldoJefe + this.incentivo; // this hace referencia a la propia clase
 	}
 }
+
+///clase para mostrar con Final en la clase padre no se puede extender
+//class Director extends Jefatura {
+//	public Director(String nom, int sue, int anio, int mes, int dia) {
+//		super(nom, 2000, 2010, 05, 10);
+//	}
+//}
