@@ -7,6 +7,7 @@ public class Peso_Ideal {
 
 		String genero = "";
 
+		// bucle do while
 		do {
 			genero = JOptionPane.showInputDialog("Introduce tu género (H/M)");
 		} while (genero.equalsIgnoreCase("H") == false && genero.equalsIgnoreCase("M") == false);

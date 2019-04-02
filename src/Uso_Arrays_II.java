@@ -5,8 +5,10 @@ public class Uso_Arrays_II {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		// declaracion
 		String[] paises = new String[8];
 
+		// inicializacion
 		paises[0] = "Argentina";
 		paises[1] = "España";
 		paises[2] = "Holanda";
@@ -20,7 +22,7 @@ public class Uso_Arrays_II {
 		for (int i = 0; i < paises.length; i++) {
 			System.out.println("Pais " + (i + 1) + ": " + paises[i]);
 		}
-		
+
 		System.out.println("con foreach:");
 
 		// con foreach
@@ -29,16 +31,16 @@ public class Uso_Arrays_II {
 			contador++;
 			System.out.println("Pais " + contador + ": " + cada_pais);
 		}
-		
+
 //		************************************************
-		//con ingreso de texto
+		// con ingreso de texto
 		System.out.println("con ingreso de texto");
-		String[] paises_arabes= new String[5];
+		String[] paises_arabes = new String[5];
 		for (int i = 0; i < paises_arabes.length; i++) {
-			paises_arabes[i]= JOptionPane.showInputDialog("Ingrese un país arabe");
+			paises_arabes[i] = JOptionPane.showInputDialog("Ingrese un país arabe");
 		}
-		
-		for (String elemento: paises_arabes) {
+
+		for (String elemento : paises_arabes) {
 			System.out.println(elemento);
 		}
 	}

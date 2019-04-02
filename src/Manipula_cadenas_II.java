@@ -6,6 +6,7 @@ public class Manipula_cadenas_II {
 
 		String frase = "Este es un texto largo de ejemplo para substring";
 
+		// obtiene una porcion de un string
 		String resumen = frase.substring(10, 30);
 
 		System.out.println(resumen);

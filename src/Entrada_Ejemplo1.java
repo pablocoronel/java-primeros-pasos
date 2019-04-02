@@ -11,12 +11,14 @@ public class Entrada_Ejemplo1 {
 
 		System.out.println("Introduce tu nombre");
 
-		String nombre= entrada.nextLine();
-		
+		// almacena el siguiente ingreso por consola
+		String nombre = entrada.nextLine();
+
 		System.out.println("Introduce edad");
-		
+
+		// almacena el siguiente ENTERO por consola
 		int edad = entrada.nextInt();
-		
+
 //		ver datos ingresados
 		System.out.println("Usuario: " + nombre + " edad: " + edad);
 	}

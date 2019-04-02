@@ -6,10 +6,13 @@ public class Manipula_Cadenas {
 
 		String nombre = "Pablo";
 
+		// concatenacion
 		System.out.println("Mi nombre es " + nombre);
 
+		// obtiene el largo de una cadena
 		System.out.println("Mi nmbre tiene " + nombre.length() + " letras");
 
+		// con charAt() se obtiene el caracter de una posicion dada en el string
 		System.out.println("La primera letra de " + nombre + " es " + nombre.charAt(0));
 
 		int ultima_letra;

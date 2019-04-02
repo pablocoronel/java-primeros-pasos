@@ -4,9 +4,11 @@ public class Arrays_Bidimensionales_I {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// arrays bidimensionales
+		// arrays bidimensionales (matrices)
+		// declaracion
 		int[][] matrix = new int[4][5];
 
+		// inicializacion
 		matrix[0][0] = 15;
 		matrix[0][1] = 20;
 		matrix[0][2] = 23;
@@ -33,6 +35,7 @@ public class Arrays_Bidimensionales_I {
 
 //		System.out.println(matrix[2][3]);
 
+		// recorrer la matriz
 		for (int i = 0; i < 4; i++) {
 			System.out.println();
 			for (int j = 0; j < 5; j++) {

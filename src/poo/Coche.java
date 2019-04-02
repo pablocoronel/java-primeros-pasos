@@ -2,6 +2,7 @@ package poo;
 
 public class Coche {
 
+	//declaracion de atributos
 	private int ruedas;
 	private int largo;
 	private int ancho;

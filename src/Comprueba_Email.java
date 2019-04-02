@@ -7,9 +7,11 @@ public class Comprueba_Email {
 		int arroba = 0;
 		boolean punto = false;
 
+		// guarda lo ingresado desde un cuadro de dialogo
 		String email = JOptionPane.showInputDialog("Ingresa el email");
 
 		for (int i = 0; i < email.length(); i++) {
+//			string.charAt() es para obtener el caracter de una posicion dada
 			if (email.charAt(i) == '@') { // el tipo char se escribe entre COMILLAS SIMPLES
 				arroba++;
 			}

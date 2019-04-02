@@ -11,6 +11,8 @@ public class Acceso_Aplicacion {
 		while (clave.equals(pass) == false) {
 			pass = JOptionPane.showInputDialog("Ingrese la contraseña");
 
+			//String.equals("asdsa") es para comparar strings
+			//es la unica forma de comparar, NO USAR ==
 			if (clave.equals(pass) == false) {
 				System.out.println("Contraseña incorrecta");
 			}

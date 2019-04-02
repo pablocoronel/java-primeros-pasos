@@ -1,5 +1,6 @@
 package poo;
 
+//esta clase hereda de la clase Coche y se le agregan unos atributos y un getter
 public class Furgoneta extends Coche {
 	private int capacidad_carga;
 	private int plazas_extra;

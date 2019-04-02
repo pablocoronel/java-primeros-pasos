@@ -10,6 +10,7 @@ public class Uso_Vehiculo {
 		miCoche1.setColor("verde");
 
 		Furgoneta miFurgoneta1 = new Furgoneta(500, 2);
+		
 		// heredado de Coche
 		miFurgoneta1.setColor("azul");
 		miFurgoneta1.setAsiento("si");

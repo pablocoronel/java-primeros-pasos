@@ -20,6 +20,7 @@ public class Uso_Arrays_I {
 
 //		System.out.println(mi_matriz[0]);
 
+		// recorrer una matriz
 		for (int i = 0; i < mi_matriz.length; i++) {
 			System.out.println("Valor del indice " + i + " : " + mi_matriz[i]);
 		}
