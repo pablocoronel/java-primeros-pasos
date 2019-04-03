@@ -49,3 +49,4 @@ Package poo:
 44: Casting de objetos. Clases y métodos final => Uso_Empleado.java
 45: Clases Abstractas I => Teoria
 46: Clases Abstractas II => Uso_Persona.java
+47: Modificadores de acceso. Clase Object => Clase_1.java, Clase_2.java (poo), Clase_3.java (paquete_pruebas)
