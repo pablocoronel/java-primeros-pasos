@@ -50,3 +50,6 @@ Package poo:
 45: Clases Abstractas I => Teoria
 46: Clases Abstractas II => Uso_Persona.java
 47: Modificadores de acceso. Clase Object => Clase_1.java, Clase_2.java (poo), Clase_3.java (paquete_pruebas)
+
+Package default:
+48: Tipos enumerados => Uso_Tallas.java
