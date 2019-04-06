@@ -53,3 +53,6 @@ Package poo:
 
 Package default:
 48: Tipos enumerados => Uso_Tallas.java
+
+Package poo:
+49: Interfaces y clases internas. Interfaces I => Uso_Empleado.java

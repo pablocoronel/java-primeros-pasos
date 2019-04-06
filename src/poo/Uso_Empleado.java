@@ -1,5 +1,6 @@
 package poo;
 
+import java.util.Arrays;
 import java.util.Date; // tipo de dato para fechas
 import java.util.GregorianCalendar; // creacion de fechas a partir de strings, ints
 
@@ -70,6 +71,10 @@ public class Uso_Empleado {
 //					+ " fecha de alta: " + misEmpleados[i].getAltaContrato());
 //		}
 
+		// ORDENAR con el metodo estatico sort (implementar la interface Comparable en
+		// el type Empleado)
+		Arrays.sort(misEmpleados);
+
 		// ver los datod de cada empleado guardado en el array de Empleados
 		for (Empleado emp : misEmpleados) {
 			// POLIMORFISMO: la variable "emp" se comporta como Empleado o Jefatura segun
@@ -85,7 +90,7 @@ public class Uso_Empleado {
 }
 
 // clase para crear empleados
-class Empleado {
+class Empleado implements Comparable {
 	private String nombre;
 	private double sueldo;
 	private Date altaContrato; // uso del tipo Date para fechas
@@ -128,6 +133,24 @@ class Empleado {
 	public void aumentarSueldo(double porcentaje) {
 		double aumento = this.sueldo * (porcentaje / 100);
 		this.sueldo += aumento;
+	}
+
+	// implementacion del metodo de la interface Comparable
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+
+		// casteo a Empleado
+		Empleado unEmpleado = (Empleado) o;
+
+		//this hace referencia a la propia clase Empleado
+		if (this.sueldo < unEmpleado.sueldo) {
+			return -1;
+		} else if (this.sueldo > unEmpleado.sueldo) {
+			return 1;
+		} else {
+			return 0;
+		}
 	}
 }
 
