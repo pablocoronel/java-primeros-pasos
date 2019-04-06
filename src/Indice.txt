@@ -56,3 +56,4 @@ Package default:
 
 Package poo:
 49: Interfaces y clases internas. Interfaces I => Uso_Empleado.java
+50: Interfaces y clases internas. Interfaces II => Uso_Empleado.java, Jefes.java

@@ -56,6 +56,22 @@ public class Uso_Empleado {
 
 		jefa_finanzas.setIncentivo(5000); // ya tiene acceso al metodo de la subclase Jefatura
 
+		// usando el metodo de la interface
+		System.out.println(jefa_finanzas.tomarDecisiones("dar más días de vacaciones"));
+
+		Empleado director_comercial = new Jefatura("loco", 25000, 2012, 01, 30);
+
+		// instancia con el principio de sustitucion por una Interface
+		Comparable ejemplo = new Empleado("lisandra", 30000, 2015, 8, 17);
+
+		if (director_comercial instanceof Empleado) {
+			System.out.println("Es de tipo jefatura");
+		}
+
+		if (ejemplo instanceof Comparable) {
+			System.out.println("Implementa la interface Comparable");
+		}
+
 //		for (int i = 0; i < misEmpleados.length; i++) {
 //			misEmpleados[i].aumentarSueldo(5);
 //		}
@@ -143,7 +159,7 @@ class Empleado implements Comparable {
 		// casteo a Empleado
 		Empleado unEmpleado = (Empleado) o;
 
-		//this hace referencia a la propia clase Empleado
+		// this hace referencia a la propia clase Empleado
 		if (this.sueldo < unEmpleado.sueldo) {
 			return -1;
 		} else if (this.sueldo > unEmpleado.sueldo) {
@@ -156,7 +172,7 @@ class Empleado implements Comparable {
 
 // herencia, extiende de la clase EMpleado
 //final en la clase impide que a partir de ella se pueda extender
-final class Jefatura extends Empleado {
+final class Jefatura extends Empleado implements Jefes {
 	private double incentivo;
 
 	// constructor
@@ -176,6 +192,13 @@ final class Jefatura extends Empleado {
 	public double getSueldo() {
 		double sueldoJefe = super.getSueldo(); // super hace referencia a la clase padre
 		return sueldoJefe + this.incentivo; // this hace referencia a la propia clase
+	}
+
+	// implementacion del metedo de la interface Jefes
+	@Override
+	public String tomarDecisiones(String decision) {
+		// TODO Auto-generated method stub
+		return "Se tomó la decision de: " + decision;
 	}
 }
 
