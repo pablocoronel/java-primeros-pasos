@@ -59,6 +59,12 @@ public class Uso_Empleado {
 		// usando el metodo de la interface
 		System.out.println(jefa_finanzas.tomarDecisiones("dar más días de vacaciones"));
 
+		// uso de otro metodo de una interface
+		System.out.println(
+				"El jefe " + jefa_finanzas.getNombre() + " tiene un bono de: " + jefa_finanzas.establece_bonus(500));
+
+		System.out.println(misEmpleados[3].getNombre() + " tiene un bonus de: " + misEmpleados[3].establece_bonus(200));
+
 		Empleado director_comercial = new Jefatura("loco", 25000, 2012, 01, 30);
 
 		// instancia con el principio de sustitucion por una Interface
@@ -106,7 +112,7 @@ public class Uso_Empleado {
 }
 
 // clase para crear empleados
-class Empleado implements Comparable {
+class Empleado implements Comparable, Trabajadores {
 	private String nombre;
 	private double sueldo;
 	private Date altaContrato; // uso del tipo Date para fechas
@@ -168,6 +174,13 @@ class Empleado implements Comparable {
 			return 0;
 		}
 	}
+
+	// implementacion del metodo de la interface Trabajadores
+	@Override
+	public double establece_bonus(double gratificacion) {
+		// TODO Auto-generated method stub
+		return Trabajadores.bonus_base + gratificacion;
+	}
 }
 
 // herencia, extiende de la clase EMpleado
@@ -199,6 +212,15 @@ final class Jefatura extends Empleado implements Jefes {
 	public String tomarDecisiones(String decision) {
 		// TODO Auto-generated method stub
 		return "Se tomó la decision de: " + decision;
+	}
+
+	// implementacion del metedo de la interface Trabajadores
+	@Override
+	public double establece_bonus(double gratificacion) {
+		double prima = 2000;
+
+		// Trabajadores.bonus_base es una constante
+		return Trabajadores.bonus_base + gratificacion + prima;
 	}
 }
 
