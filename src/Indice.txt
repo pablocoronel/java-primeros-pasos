@@ -58,3 +58,4 @@ Package poo:
 49: Interfaces y clases internas. Interfaces I => Uso_Empleado.java
 50: Interfaces y clases internas. Interfaces II => Uso_Empleado.java, Jefes.java
 51: Interfaces y clases internas. Interfaces III => Uso_Empleado.java, Jefes.java, Trabajadores.java
+52: Interfaces y clases internas. Interfaces IV => Prueba_Temporizador.java
