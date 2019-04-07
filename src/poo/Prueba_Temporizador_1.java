@@ -1,5 +1,6 @@
 package poo;
 
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Date;
@@ -7,7 +8,7 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
-public class Prueba_Temporizador {
+public class Prueba_Temporizador_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,7 +17,7 @@ public class Prueba_Temporizador {
 		DameLaHora oyente = new DameLaHora();
 
 //		ActionListener oyente = new DameLaHora(); esto tambien funciona
-		
+
 		// crea un temporizador
 		Timer mi_temporizador = new Timer(5000, oyente);
 
@@ -38,6 +39,9 @@ class DameLaHora implements ActionListener {
 		Date ahora = new Date(); // hora actual
 
 		System.out.println("Te pongo la hora cada 5 segundos: " + ahora);
+
+		// emite un sonido del sistema operativo
+		Toolkit.getDefaultToolkit().beep();
 	}
 
 }
